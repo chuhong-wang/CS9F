@@ -6,13 +6,13 @@
 class Position
 {
 public:
-    Position();
+    Position():myRadius(1), myAngleInRadians(0) {};
     // radius = 1, angle = 0.
 
-    Position(float r);
+    Position(float r):myRadius(r), myAngleInRadians(0) {};
     // angle = 0.
 
-    Position(float r, float thetaInRadians);
+    Position(float r, float thetaInRadians):myRadius(r), myAngleInRadians(thetaInRadians) {};
 
     void SetAbsolutePosition(float r, float thetaInRadians);
     // Reinitialize this position.
