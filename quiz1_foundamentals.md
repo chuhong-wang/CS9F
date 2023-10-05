@@ -1,8 +1,7 @@
 ## 1. 
 > Explain what function overloading is, and how it's useful.
 
-Answer: Function overloading is that we can define multiple functions with the same name but different argument types. 
-It's useful as being more flexible. 
+Answer: Function overloading refers to the use of the same name for two different function. With function overloading, we can call the function on various types of data that are applicable. Otherwise, we need to make up artifically different names for each function of its argument type. 
 
 ## 2. 
 > Write an input statement that reads values from cin into variables cmd and arg, and a single output statement that prints those values, labeled appropriately, on two separate lines.
@@ -62,7 +61,7 @@ bool InRange(int n) {
 Answer: 
 ```
 bool InRange(int n) {
-    return (n>4 && n<27) ;
+    return (n>=4 && n<=27) ;
 }
 ```
 
@@ -82,7 +81,7 @@ int main() {
 ```
 Answer: 
 ```
-void F(int &k2, int &k1) {
+void F(int &k2, int k1) {
     k1++;
     k2 = k2 + 2;
 }
