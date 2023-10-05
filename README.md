@@ -1,2 +1,2 @@
-# CS9F_projects
-projects in CS9F
+# CS9F - projects and quiz
+The course can be found [here](https://selfpaced.bitbucket.io/#/cpp/calendar).
