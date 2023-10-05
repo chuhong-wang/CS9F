@@ -51,14 +51,24 @@ for (int k = 1; k < 5; k = k + 2) {
 }
 ```
 Answer: `n=2`
-## 5. Fill in the blank in the definition of the function InRange given below. InRange should return true if its integer argument is between 4 and 27, inclusive.
+## 5. 
+> Fill in the blank in the definition of the function InRange given below. InRange should return true if its integer argument is between 4 and 27, inclusive.
+
 ```
 bool InRange(int n) {
     return _________________________________ ;
 }
 ```
 Answer: 
-## 6. Complete the heading for function F so that, on return from the call to F in main, the variable n1 contains the value 3 and the variable n2 contains the value 7.
+```
+bool InRange(int n) {
+    return (n>4 && n<27) ;
+}
+```
+
+## 6. 
+> Complete the heading for function F so that, on return from the call to F in main, the variable n1 contains the value 3 and the variable n2 contains the value 7.
+
 ```
 void F( _________________________________ ) {
     k1++;
@@ -70,9 +80,41 @@ int main() {
     F(n2, n1);
 }
 ```
+Answer: 
+```
+void F(int &k2, int &k1) {
+    k1++;
+    k2 = k2 + 2;
+}
 
-## 7. List the contents of the `fractions.h` file for a Fraction class whose member functions include a constructor, Numerator and Denominator access function, and a Sum function that returns the result of adding the value stored in the Fraction object to the argument value. Assume that the private data for a fraction consists of two integers called myNumer and myDenom.
+int main() {
+    int n1 = 3, n2 = 5;
+    F(n2, n1);
+}
+```
 
-## 8. Define the Sum function that would appear in the fractions.cpp file for the Fraction class described in question 7.
+## 7. 
+> List the contents of the `fractions.h` file for a Fraction class whose member functions include a constructor, `Numerator` and `Denominator` access function, and a `Sum` function that returns the result of adding the value stored in the Fraction object to the argument value. Assume that the private data for a fraction consists of two integers called `myNumer` and `myDenom`.
+
+Answer: 
+```
+struct Fraction{
+    public: 
+        Fraction(double n, double d):myNumer(n), myDenom(d) {}
+        int Numerator() {return myNumer;}
+        int Denominator() {return myDenom;}
+        void Sum(float &n) {n += myNumer/myDenom;} 
+
+    private:
+        double myNumer;
+        double myDenom; 
+}; 
+```
+## 8. 
+> Define the Sum function that would appear in the fractions.cpp file for the Fraction class described in question 7.
+```
+Fraction::Sum(float &n) {n += myNumer/myDenom;} 
+```
+
 
 
