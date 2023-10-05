@@ -112,7 +112,7 @@ struct Fraction{
 ## 8. 
 > Define the Sum function that would appear in the fractions.cpp file for the Fraction class described in question 7.
 ```
-Fraction::Sum(float &n) {n += myNumer/myDenom;} 
+void Fraction::Sum(float &n) {n += myNumer/myDenom;} 
 ```
 
 
