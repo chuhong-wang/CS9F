@@ -1,0 +1,4 @@
+update word 5
+list names
+list quantities
+quit
