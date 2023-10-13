@@ -1,4 +1,6 @@
-update word 5
-update word 9
+update orange 5
+update apple 9
+update orange -2
+update banana 1
 list names
 list quantities
