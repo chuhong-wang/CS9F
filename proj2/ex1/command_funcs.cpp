@@ -79,7 +79,6 @@ void InterpretBatch(istream& is){
     string filename, temp; 
     if (is>>filename) {
         if (!(is>>temp)) {
-            cout<<"update "<<filename<<endl; 
             ifstream fin(filename); 
             InterpretCommands(fin); 
         }
