@@ -1,0 +1,19 @@
+Hi, my name is me
+Meet my parent mom/dad
+Meet my grandparent Amos McCoy
+print children of `parent`:
+Wilma Fred me
+grandchildren are:
+Marge Homer Mike
+print descendants of `grandparent`:
+mom/dad
+	Wilma
+	Fred
+	me
+		Marge
+			Hilary
+			Bill
+		Homer
+		Mike
+			Lisa
+			Bart
